@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#4DBAAA"
+            android:padding="24dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Akademi Kütüphanesi"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Konuyu seç, öğren ve +50 XP kazan!"
+                android:textColor="#E0E0E0"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardPython"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16dp" android:gravity="center_vertical" android:orientation="horizontal">
+                <TextView android:layout_width="50dp" android:layout_height="50dp" android:text="Py" android:background="#FFEB3B" android:textColor="#333" android:gravity="center" android:textStyle="bold" android:textSize="18sp"/>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginLeft="16dp" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Python Temelleri" android:textSize="18sp" android:textStyle="bold" android:textColor="#333"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Değişkenler, Listeler ve Sözlükler" android:textSize="12sp" android:textColor="#757575"/>
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="OKU" android:textColor="#620E21" android:textStyle="bold"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardJava"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="12dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16dp" android:gravity="center_vertical" android:orientation="horizontal">
+                <TextView android:layout_width="50dp" android:layout_height="50dp" android:text="Ja" android:background="#F44336" android:textColor="#FFF" android:gravity="center" android:textStyle="bold" android:textSize="18sp"/>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginLeft="16dp" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Java &amp; OOP" android:textSize="18sp" android:textStyle="bold" android:textColor="#333"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sınıf, Nesne, Kalıtım ve JVM" android:textSize="12sp" android:textColor="#757575"/>
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="OKU" android:textColor="#620E21" android:textStyle="bold"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardCPP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="12dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16dp" android:gravity="center_vertical" android:orientation="horizontal">
+                <TextView android:layout_width="50dp" android:layout_height="50dp" android:text="C++" android:background="#2196F3" android:textColor="#FFF" android:gravity="center" android:textStyle="bold" android:textSize="18sp"/>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginLeft="16dp" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="C++ ve Bellek" android:textSize="18sp" android:textStyle="bold" android:textColor="#333"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pointerlar, Referanslar ve Adresler" android:textSize="12sp" android:textColor="#757575"/>
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="OKU" android:textColor="#620E21" android:textStyle="bold"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardCS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="12dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16dp" android:gravity="center_vertical" android:orientation="horizontal">
+                <TextView android:layout_width="50dp" android:layout_height="50dp" android:text="C#" android:background="#9C27B0" android:textColor="#FFF" android:gravity="center" android:textStyle="bold" android:textSize="18sp"/>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginLeft="16dp" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="C# .NET" android:textSize="18sp" android:textStyle="bold" android:textColor="#333"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Properties, LINQ ve Async/Await" android:textSize="12sp" android:textColor="#757575"/>
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="OKU" android:textColor="#620E21" android:textStyle="bold"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="12dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16dp" android:gravity="center_vertical" android:orientation="horizontal">
+                <TextView android:layout_width="50dp" android:layout_height="50dp" android:text="C" android:background="#607D8B" android:textColor="#FFF" android:gravity="center" android:textStyle="bold" android:textSize="18sp"/>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginLeft="16dp" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="C Sistem Programlama" android:textSize="18sp" android:textStyle="bold" android:textColor="#333"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Structs, Malloc ve Sistem Çağrıları" android:textSize="12sp" android:textColor="#757575"/>
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="OKU" android:textColor="#620E21" android:textStyle="bold"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardJS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="12dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16dp" android:gravity="center_vertical" android:orientation="horizontal">
+                <TextView android:layout_width="50dp" android:layout_height="50dp" android:text="JS" android:background="#FF9800" android:textColor="#FFF" android:gravity="center" android:textStyle="bold" android:textSize="18sp"/>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginLeft="16dp" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Modern JavaScript" android:textSize="18sp" android:textStyle="bold" android:textColor="#333"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="DOM, ES6, Let/Const ve Arrow Func" android:textSize="12sp" android:textColor="#757575"/>
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="OKU" android:textColor="#620E21" android:textStyle="bold"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardHardware"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="12dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16dp" android:gravity="center_vertical" android:orientation="horizontal">
+                <TextView android:layout_width="50dp" android:layout_height="50dp" android:text="💾" android:background="#FF5722" android:textColor="#FFF" android:gravity="center" android:textStyle="bold" android:textSize="24sp"/>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginLeft="16dp" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bilgisayar Donanımı" android:textSize="18sp" android:textStyle="bold" android:textColor="#333"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CPU, RAM, Binary ve Logic Gates" android:textSize="12sp" android:textColor="#757575"/>
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="OKU" android:textColor="#620E21" android:textStyle="bold"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

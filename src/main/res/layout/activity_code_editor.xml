@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#121212"
+    android:padding="8dp"> <androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="#1E1E1E"
+    app:cardCornerRadius="8dp"
+    android:layout_marginBottom="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginEnd="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DİL"
+                    android:textColor="#03DAC5"
+                    android:textSize="10sp"
+                    android:textStyle="bold"/>
+
+                <Spinner
+                    android:id="@+id/spinnerLanguages"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@android:drawable/btn_dropdown"
+                    android:backgroundTint="#CCCCCC"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:orientation="vertical"
+                android:layout_marginStart="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GÖREV"
+                    android:textColor="#BB86FC"
+                    android:textSize="10sp"
+                    android:textStyle="bold"/>
+
+                <Spinner
+                    android:id="@+id/spinnerQuestions"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@android:drawable/btn_dropdown"
+                    android:backgroundTint="#CCCCCC"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvQuestionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Soru yükleniyor..."
+            android:textColor="#E0E0E0"
+            android:textSize="12sp"
+            android:layout_marginTop="4dp"
+            android:maxLines="3"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/tvExpectedOutput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Çıktı: ..."
+            android:textColor="#03DAC5"
+            android:textSize="10sp"
+            android:layout_marginTop="2dp"
+            android:textStyle="italic"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/etCodeEditor"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#1E1E1E"
+        android:gravity="top|start"
+        android:hint="# Kod yaz..."
+        android:textColorHint="#555555"
+        android:textColor="#00FF00"
+        android:textSize="14sp"
+        android:fontFamily="monospace"
+        android:padding="12dp"
+        android:inputType="textMultiLine|textNoSuggestions"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="vertical"
+        android:overScrollMode="always"
+        android:layout_marginBottom="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="4dp">
+
+        <Button
+            android:id="@+id/btnClearCode"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="SIFIRLA"
+            android:textSize="12sp"
+            android:backgroundTint="#CF6679"
+            android:layout_marginRight="8dp"/>
+
+        <Button
+            android:id="@+id/btnRunCode"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="▶ ÇALIŞTIR"
+            android:textSize="12sp"
+            android:backgroundTint="#03DAC5"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Konsol:"
+        android:textColor="#808080"
+        android:textSize="10sp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#000000"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/tvOutput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="..."
+            android:textColor="#FFFFFF"
+            android:fontFamily="monospace"
+            android:textSize="12sp"/>
+    </ScrollView>
+
+</LinearLayout>
